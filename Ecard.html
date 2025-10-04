@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ne">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>पुण्यतिथि निमन्त्रणा</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom styles for Devanagari font and feel */
+      @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap");
+
+      body {
+        font-family: "Mukta", sans-serif;
+        background-color: #f7f7f7; /* Light background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .invitation-card {
+        max-width: 480px;
+        width: 100%;
+        background-color: #ffffff;
+        /* Changed border color to deep red */
+        border: 4px solid #991b1b; /* Red 800 equivalent */
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .header-bg {
+        /* Changed header background to deep red */
+        background-color: #991b1b; /* Red 800 equivalent */
+        color: #ffffff;
+      }
+
+      .detail-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+        border-bottom: 1px dashed #e5e7eb;
+      }
+
+      .detail-label {
+        font-weight: 600;
+        color: #4b5563; /* Gray text */
+      }
+
+      .detail-value {
+        color: #1f2937; /* Darker text */
+        text-align: right;
+      }
+
+      .ne-text {
+        /* Ensures proper spacing for Nepali text */
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="invitation-card rounded-xl overflow-hidden text-center">
+      <!-- Header Section (Deep Red) -->
+      <div class="header-bg p-6">
+        <h1 class="text-3xl font-bold mb-1">शोकाकुल निमन्त्रणा</h1>
+        <p class="text-lg">(४५ औं पुण्यतिथि तथा प्रसाद ग्रहण कार्यक्रम)</p>
+      </div>
+
+      <!-- Body Section -->
+      <div class="p-6 md:p-8 space-y-6">
+        <!-- Updated introductory text to be more direct and respectful, removed asterisks -->
+        <p class="ne-text text-lg font-semibold text-gray-700">
+          हाम्रा पूज्यनीय बुबाको सम्झनामा
+        </p>
+
+        <div
+          class="bg-gray-50 p-4 rounded-lg shadow-inner border border-gray-200"
+        >
+          <!-- Name text color changed to deep red and name inserted -->
+          <p class="text-2xl font-bold text-red-800">स्वर्गीय जयन्द्र खैगुली</p>
+          <p class="text-sm text-gray-500 mt-1">(Late Jayendra Khaiguli)</p>
+        </div>
+
+        <!-- Punya Tithi Details -->
+        <div class="ne-text space-y-2 text-gray-600">
+          <p class="text-base">
+            उहाँको स्वर्गारोहण मिति २०८२ साल असोज ३ गते (सन् २०२५ सेप्टेम्बर १९)
+            का दिन भएको थियो ।
+          </p>
+          <p class="text-xl font-semibold text-gray-800 pt-4">
+            ४५ औं दिनको विशेष कार्यक्रम
+          </p>
+          <p class="text-gray-700">
+            दिवङ्गत आत्माको चिरशान्ति तथा बैकुण्ठ वासको कामना गर्दै, उहाँको ४५
+            औं दिनको पुण्यतिथिमा **प्रसाद ग्रहण** कार्यक्रमको आयोजना गरिएको छ ।
+          </p>
+        </div>
+
+        <!-- Event Details (Light Red Background, Red Border and Text) -->
+        <div
+          class="bg-red-100 p-4 rounded-lg border-l-4 border-red-600 text-left space-y-2"
+        >
+          <div class="detail-item">
+            <span class="detail-label">कार्यक्रम मिति (BS):</span>
+            <!-- Detail value text color changed to red -->
+            <span class="detail-value font-bold text-red-700"
+              >वि.सं. २०८२ कार्तिक १७ गते (सोमबार)</span
+            >
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">कार्यक्रम मिति (AD):</span>
+            <!-- Detail value text color changed to red -->
+            <span class="detail-value font-bold text-red-700"
+              >सन् २०२५ नोभेम्बर ३ (Monday)</span
+            >
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">समय:</span>
+            <!-- Time updated -->
+            <span class="detail-value font-bold">दिउँसो ०३:०० बजे देखि</span>
+          </div>
+          <div class="detail-item border-b-0">
+            <span class="detail-label">स्थान:</span>
+            <!-- Venue updated to English -->
+            <span class="detail-value font-bold text-wrap"
+              >Hotel A One Cafe and Venue, Koteshwor</span
+            >
+          </div>
+        </div>
+
+        <!-- Final Request -->
+        <p class="ne-text text-base text-gray-700 pt-4">
+          यस दुखद घडीमा उपस्थित भई दिवङ्गत आत्माप्रति श्रद्धाञ्जली अर्पण गर्नुका
+          साथै प्रसाद ग्रहण गरिदिनुहुन सम्पूर्ण इष्टमित्र, आफन्तजन तथा
+          शुभचिन्तकहरूमा हार्दिक अनुरोध गर्दछौं ।
+        </p>
+      </div>
+
+      <!-- Footer Section -->
+      <div class="p-4 bg-gray-100 border-t border-gray-200">
+        <p class="text-lg font-semibold text-gray-700">निवेदक (Invitee):</p>
+        <!-- Footer text color changed to deep red -->
+        <p class="text-xl font-bold text-red-800">
+          जेनिशा खैगुली र सम्पूर्ण परिवारजन
+        </p>
+        <p class="text-sm text-gray-500 mt-1">सम्पर्क: ९८६०४६५२६०</p>
+      </div>
+    </div>
+  </body>
+</html>
